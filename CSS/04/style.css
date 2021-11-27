@@ -1,0 +1,157 @@
+html {
+
+    font-size: 150%;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;    
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,180,163,1) 35%, rgba(0,212,255,1) 100%); 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.4em;
+    overflow: hidden;
+
+    
+}
+ 
+ button {
+        color: black;
+        font: inherit;
+        letter-spacing: inherit;
+        border: 1px solid gray;
+        background-color: transparent;
+        padding: 0.75em 1em;
+        border-radius: 0;
+        line-height: 1;
+        margin: 0;           
+} 
+
+.calculator_display {
+
+    background-color: black;
+    color: white;
+    width: 14.10rem;
+    padding: 0.7rem 1rem;
+    text-align: right;   
+}
+
+.calculator_keys {
+
+    background: grey; 
+    display: grid;
+    grid-gap: 0.2px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    
+}
+
+
+.uno {
+    grid-area: uno;
+    background-color: rgb(172, 182, 187);
+}
+
+.due {
+    grid-area: due;
+    background-color: rgb(172, 182, 187);
+}
+
+.tre {
+    grid-area: tre;
+    background-color: rgb(172, 182, 187);
+}
+
+.quattro {
+    grid-area: quattro;
+    background-color: rgb(172, 182, 187);
+}
+
+.cinque {
+    grid-area: cinque;
+    background-color: rgb(172, 182, 187);
+}
+
+.sei {
+    grid-area: sei;
+    background-color: rgb(172, 182, 187);
+}
+
+.sette
+{
+    grid-area: sette;
+    background-color: rgb(172, 182, 187);
+}
+
+.otto {
+    grid-area: otto;
+    background-color: rgb(172, 182, 187);
+}
+
+.nove {
+    grid-area: nove;
+    background-color: rgb(172, 182, 187);
+}
+.zero {
+    grid-area: zero;
+    background-color: rgb(172, 182, 187);
+}
+
+.dot {
+    grid-area: dot;
+    background-color: rgb(172, 182, 187);
+}
+
+.cc {
+    grid-area: cc;
+    background-color: rgb(172, 182, 187);
+}
+
+.egual {
+
+    grid-area: egual;
+    background-color: rgb(233, 55, 49);
+}
+
+.piu {
+    grid-area: piu;
+    background-color: rgb(123, 145, 165);
+}
+.meno {
+    grid-area: meno;
+    background-color: rgb(123, 145, 165);
+}
+.dvd {
+    grid-area: dvd;
+    background-color: rgb(123, 145, 165);
+}
+
+.xx {
+
+    grid-area: xx;
+    background-color: rgb(123, 145, 165);
+}
+
+
+
+.calculator_keys {
+
+    grid-template-areas: 
+    "piu meno xx dvd"
+    "sette otto nove egual"
+    "quattro cinque sei egual"
+    "uno due tre egual"
+    "zero dot cc egual"
+    ;
+}
+

@@ -1,0 +1,57 @@
+body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none
+}
+
+.expandable {
+	visibility: collapse;
+	background: gray;
+	color: white;
+}
+
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+
+} 
+
+#expand-btn {
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+#expand-btn:hover {
+	color: thistle;	
+}
+
+#expand-btn::before {
+	content: "Mostra Righe";	
+}
+
+#expand-toggle:checked ~ * .expandable {
+	
+	visibility: visible;
+  }
+  
+
+#expand-toggle:checked ~ #expand-btn {
+	background-color: #ff8888;
+  }
+
+  #expand-toggle:checked ~ #expand-btn {
+	
+	background-color: #88ff88;
+  }
+
+  #expand-toggle:checked ~ #expand-btn::before {
+
+	content: "Nascondi Righe";
+	
+}
